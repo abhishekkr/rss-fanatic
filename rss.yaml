@@ -1,0 +1,7 @@
+rss:
+  rubyrogues:
+    source: 'http://feeds.feedburner.com/RubyRogues'
+  therubyshow:
+    source: 'http://feeds.feedburner.com/rubyshow'
+  ruby5:
+    source: 'http://feeds.feedburner.com/Ruby5'

@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem 'xml-motor'
+gem 'rss-motor'
 
 

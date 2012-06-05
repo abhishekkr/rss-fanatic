@@ -1,10 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    xml-motor (0.1.1)
+    rss-motor (0.0.4)
+      xml-motor (>= 0.1.4)
+    xml-motor (0.1.4)
 
 PLATFORMS
-  x86-mingw32
+  ruby
 
 DEPENDENCIES
-  xml-motor
+  rss-motor
