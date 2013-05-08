@@ -1,9 +1,9 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    rss-motor (0.0.4)
-      xml-motor (>= 0.1.4)
-    xml-motor (0.1.4)
+    rss-motor (0.1.1)
+      xml-motor (>= 0.1.6)
+    xml-motor (0.1.6)
 
 PLATFORMS
   ruby
