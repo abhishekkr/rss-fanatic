@@ -1,6 +1,7 @@
 rss:
   rubyrogues:
     source: 'http://feeds.feedburner.com/RubyRogues'
+    nodes_attrib: media:content.url
   therubyshow:
     source: 'http://feeds.feedburner.com/rubyshow'
   ruby5:
