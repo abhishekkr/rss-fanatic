@@ -57,5 +57,3 @@ module Rss
     end
   end
 end
-
-Rss::Fanatic.fanaticize
