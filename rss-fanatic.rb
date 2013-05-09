@@ -27,11 +27,13 @@ module Rss
     end
 
     def self.download(data)
+      data['elements'] = ['enclosure'] if data['elements'].empty? &&
+                                          data['attribs'].empty?
       puts "For #{data['url']}, downloading..."
       data['elements'].each{|elem|
         items = data['items'].collect{|item| item[elem]}
-        #puts ">>> #{items}"
-        puts ">>> #{data['items'][0]}"
+        puts items.join(", ")
+        #puts ">>> #{data['items'][0]}"
       }
       data['attribs'].each{|elem_attrib|
         items = data['items'].collect{|item| item[elem_attrib.join(':')]}
@@ -40,8 +42,6 @@ module Rss
     end
 
     def self.nodes_value(rss_yaml)
-      return ['enclosure'] if rss_yaml['nodes_value'].nil? &&
-                        rss_yaml['nodes_attrib'].nil?
       nodes_value = rss_yaml['nodes_value'] || ''
       nodes_value.split(',').collect{|node| node.strip}
     end
