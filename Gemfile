@@ -1,5 +1,4 @@
 source "http://rubygems.org"
 
-gem 'rss-motor'
-
-
+# Specify your gem's dependencies in rss-fanatic.gemspec
+gemspec
